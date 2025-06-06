@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migobot TCG - Criar Carta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Migobot TCG</h1>
+        <h2>Criar Nova Carta</h2>
+        
+        <form id="cardForm">
+            <div class="form-group">
+                <label for="robotName">Nome do Robô:</label>
+                <input type="text" id="robotName" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="robotCode">Código do Robô (5 dígitos):</label>
+                <input type="text" id="robotCode" pattern="\d{5}" title="Digite exatamente 5 dígitos numéricos" required>
+                <div class="code-info">
+                    <small>Ordem dos atributos: 1-Frequência | 2-Resistência | 3-Inteligência | 4-Potência | 5-Eficiência</small>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="cardImage">Imagem da Carta:</label>
+                <input type="file" id="cardImage" accept="image/*" required>
+            </div>
+            
+            <button type="submit">Criar Carta</button>
+        </form>
+        
+        <div class="navigation">
+            <a href="gallery.html">Ver Galeria de Cartas</a>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

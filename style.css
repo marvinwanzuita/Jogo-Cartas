@@ -1,0 +1,135 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.code-info {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.navigation {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.navigation a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+.cards-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(176px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 176px; /* 88mm em pixels (88mm ≈ 176px em 96dpi) */
+    height: 252px; /* 63mm em pixels (63mm ≈ 126px) - dobrado para proporção visual */
+    position: relative;
+}
+
+.card-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-label {
+    font-size: 0.7em;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .cards-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    
+    .card {
+        width: 140px;
+        height: 210px;
+    }
+}
