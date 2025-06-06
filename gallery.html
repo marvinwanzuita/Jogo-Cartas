@@ -8,15 +8,31 @@
 </head>
 <body>
     <div class="container">
-        <h1>Migobot TCG</h1>
-        <h2>Galeria de Cartas</h2>
+        <header>
+            <h1>Migobot TCG</h1>
+            <h2>Galeria de Cartas</h2>
+        </header>
         
         <div class="navigation">
             <a href="index.html">Criar Nova Carta</a>
         </div>
         
         <div id="cardsGallery" class="cards-gallery">
-            <!-- As cartas serão inseridas aqui via JavaScript -->
+            <!-- Cartas serão inseridas aqui via JavaScript -->
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div id="cardModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-card">
+                <img id="modalImage" class="modal-image" src="" alt="">
+                <div class="modal-details">
+                    <h2 id="modalName"></h2>
+                    <div id="modalStats" class="modal-stats"></div>
+                </div>
+            </div>
         </div>
     </div>
     
